@@ -1,0 +1,4 @@
+# 仮のPagesプロジェクト名。発行されたpages.dev URLが異なる場合は一括置換してください。
+User-agent: *
+Allow: /
+Sitemap: https://kuruma-sontoku.pages.dev/sitemap.xml

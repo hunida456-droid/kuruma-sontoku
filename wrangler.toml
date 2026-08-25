@@ -1,0 +1,4 @@
+# Optional Wrangler configuration for Cloudflare Pages Direct Upload.
+# The dashboard drag-and-drop flow does not require Wrangler.
+name = "kuruma-sontoku"
+pages_build_output_dir = "."
