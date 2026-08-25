@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ハイブリッド vs EV｜電気代と燃料費の損益分岐を計算｜クルマ損得計算</title>
+  <meta name="description" content="HVのガソリン代とEVの充電代、車両価格差を入力して、EVが何年で元を取れるか損益分岐を計算できます。">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="canonical" href="https://kuruma-sontoku.pages.dev/tools/hv-ev.html">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"EVの充電代はどう計算しますか？","acceptedAnswer":{"@type":"Answer","text":"年間走行距離をEVの電費（km/kWh）で割り、必要な電力量に充電単価を掛けて計算します。"}},{"@type":"Question","name":"自宅充電と急速充電では結果が変わりますか？","acceptedAnswer":{"@type":"Answer","text":"充電単価が異なるため結果は変わります。自宅充電や外出先での充電を含めた平均単価を入力してください。"}},{"@type":"Question","name":"EVの補助金や充電設備費は含まれますか？","acceptedAnswer":{"@type":"Answer","text":"この簡易比較には補助金、充電設備、税金、保険、整備費などは含まれていません。必要に応じて別途確認してください。"}}]}
+  </script>
+</head>
+<body data-tool="hv-ev">
+  <header><div class="wrap topbar"><a class="brand" href="../index.html">クルマ損得計算</a><nav class="nav"><a href="fuel.html">ガソリン代</a><a href="ownership.html">維持費</a><a href="gas-hv.html">ガソリン vs HV</a><a href="hv-ev.html">HV vs EV</a><a href="replace.html">買い替え</a></nav></div></header>
+  <main>
+    <section class="hero wrap"><h1>ハイブリッド vs EV｜損益分岐計算</h1><p>HVのガソリン代とEVの充電代を比較し、EVの車両価格差を何年で回収できるか計算できます。</p></section>
+    <section class="wrap tool"><div class="panel"><div class="field"><label>年間走行距離（km）</label><input id="distance" type="number" value="12000"></div><div class="field"><label>ガソリン価格（円/L）</label><input id="fuelprice" type="number" value="175"></div><div class="field"><label>HV 実燃費（km/L）</label><input id="hvEff" type="number" value="22" step="0.1"></div><div class="field"><label>EV 電費（km/kWh）</label><input id="evEff" type="number" value="6.5" step="0.1"></div><div class="field"><label>充電単価（円/kWh）</label><input id="electricity" type="number" value="35" step="0.1"></div><div class="field"><label>EVの車両価格差（円）</label><input id="extra" type="number" value="700000"></div></div><aside class="result"><span>価格差の回収目安</span><div class="big" id="payback">-</div><dl><dt>HV 年間燃料費</dt><dd id="hv">-</dd><dt>EV 年間充電費</dt><dd id="ev">-</dd><dt>年間節約額</dt><dd id="saving">-</dd><dt>10年後の差額</dt><dd id="tenyear">-</dd></dl></aside></section>
+    <section class="wrap content"><div class="ad">広告スペース（AdSense承認後に設置）</div><h2>自宅充電できる人ほど比較しやすい</h2><p>EVの電気代は契約プランや充電場所で大きく変わります。自宅充電が中心なら実際の電気料金単価を入力してください。</p><h2>EVは購入価格以外も比較</h2><p>補助金、税金、タイヤ、保険、充電設備、リセールなどはこの簡易計算に含まれていません。まずエネルギーコスト差を見るための目安として利用してください。</p><div class="cta"><strong>広告・アフィリエイト導線用スペース</strong><span class="note">保険見積もり・中古車査定・タイヤ等。提携後にリンクを設置。</span></div><section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">HVとEVの比較FAQ</h2><details><summary>EVの充電代はどう計算しますか？</summary><p>年間走行距離を電費で割り、必要な電力量に充電単価を掛けて計算します。</p></details><details><summary>自宅充電と急速充電では結果が変わりますか？</summary><p>充電単価が異なるため結果も変わります。実際の利用状況に近い平均単価を入力してください。</p></details><details><summary>EVの補助金や充電設備費は含まれますか？</summary><p>補助金、充電設備、税金、保険、整備費などは含まれていません。必要に応じて別途確認してください。</p></details></section></section>
+  </main>
+  <footer><div class="wrap"><div class="footerlinks"><a href="../privacy.html">プライバシーポリシー</a><a href="../disclaimer.html">免責事項</a></div>© <span id="year"></span> クルマ損得計算</div></footer>
+  <script type="module" src="../assets/app.mjs"></script><script src="../assets/site.js"></script>
+</body>
+</html>

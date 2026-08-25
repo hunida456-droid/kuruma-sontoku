@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ガソリン車 vs ハイブリッド｜何年で元が取れるか計算｜クルマ損得計算</title>
+  <meta name="description" content="ガソリン車とハイブリッド車の燃費・車両価格差を入力し、燃料費の節約で何年で元が取れるか損益分岐を計算できます。">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="canonical" href="https://kuruma-sontoku.pages.dev/tools/gas-hv.html">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"ハイブリッド車は何年で元が取れますか？","acceptedAnswer":{"@type":"Answer","text":"年間走行距離、燃費、ガソリン価格、車両価格差によって変わります。この計算機にご自身の条件を入力すると、燃料費だけで見た回収目安を確認できます。"}},{"@type":"Question","name":"この計算に税金や保険料は含まれますか？","acceptedAnswer":{"@type":"Answer","text":"この計算は主に燃料費と車両価格差を比較する簡易計算です。税金、保険、整備費、リセールなどは含めていません。"}},{"@type":"Question","name":"年間走行距離が少なくてもHVは得ですか？","acceptedAnswer":{"@type":"Answer","text":"年間走行距離が少ないと燃料費の節約額も小さくなり、価格差の回収に長い期間がかかる傾向があります。"}}]}
+  </script>
+</head>
+<body data-tool="gas-hv">
+  <header><div class="wrap topbar"><a class="brand" href="../index.html">クルマ損得計算</a><nav class="nav"><a href="fuel.html">ガソリン代</a><a href="ownership.html">維持費</a><a href="gas-hv.html">ガソリン vs HV</a><a href="hv-ev.html">HV vs EV</a><a href="replace.html">買い替え</a></nav></div></header>
+  <main>
+    <section class="hero wrap"><h1>ガソリン車 vs ハイブリッド｜損益分岐計算</h1><p>燃費差による年間節約額から、ハイブリッド車の車両価格差を何年で回収できるか計算できます。</p></section>
+    <section class="wrap tool"><div class="panel"><div class="field"><label>年間走行距離（km）</label><input id="distance" type="number" value="12000"></div><div class="field"><label>ガソリン価格（円/L）</label><input id="fuelprice" type="number" value="175"></div><div class="field"><label>ガソリン車 実燃費（km/L）</label><input id="gasEff" type="number" value="13" step="0.1"></div><div class="field"><label>HV 実燃費（km/L）</label><input id="hvEff" type="number" value="22" step="0.1"></div><div class="field"><label>HVの車両価格差（円）</label><input id="extra" type="number" value="400000"></div></div><aside class="result"><span>価格差の回収目安</span><div class="big" id="payback">-</div><dl><dt>ガソリン車 年間燃料費</dt><dd id="gas">-</dd><dt>HV 年間燃料費</dt><dd id="hv">-</dd><dt>年間節約額</dt><dd id="saving">-</dd><dt>10年後の差額</dt><dd id="tenyear">-</dd></dl></aside></section>
+    <section class="wrap content"><div class="ad">広告スペース（AdSense承認後に設置）</div><h2>「HVは何年で元が取れる？」を自分の条件で</h2><p>走行距離が多いほど燃費差による節約額が大きくなり、価格差を回収しやすくなります。一方、年間走行距離が少ない場合は燃料費だけでは回収に時間がかかることがあります。</p><h2>燃料費以外も確認</h2><p>この計算は燃料費と車両価格差を中心にした簡易比較です。税金、保険、整備費、リセールなどが異なる場合は最終判断に加えてください。</p><div class="cta"><strong>広告・アフィリエイト導線用スペース</strong><span class="note">保険見積もり・中古車査定・タイヤ等。提携後にリンクを設置。</span></div><section class="faq" aria-labelledby="faq-title"><h2 id="faq-title">ガソリン車とHVの比較FAQ</h2><details><summary>ハイブリッド車は何年で元が取れますか？</summary><p>走行距離、燃費、ガソリン価格、車両価格差によって変わります。入力条件で燃料費だけの回収目安を確認してください。</p></details><details><summary>この計算に税金や保険料は含まれますか？</summary><p>主に燃料費と車両価格差を比較しています。税金、保険、整備費、リセールなどは含めていません。</p></details><details><summary>年間走行距離が少なくてもHVは得ですか？</summary><p>走行距離が少ないほど年間の節約額は小さくなり、価格差の回収には長い期間がかかる傾向があります。</p></details></section></section>
+  </main>
+  <footer><div class="wrap"><div class="footerlinks"><a href="../privacy.html">プライバシーポリシー</a><a href="../disclaimer.html">免責事項</a></div>© <span id="year"></span> クルマ損得計算</div></footer>
+  <script type="module" src="../assets/app.mjs"></script><script src="../assets/site.js"></script>
+</body>
+</html>
